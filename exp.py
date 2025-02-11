@@ -7,7 +7,7 @@ from io import BytesIO
 # Streamlit title
 st.title("PubChem Search Interface")
 st.sidebar.title("Search Methods")
-st.write("Created by: Parthebhan Pari")
+
 
 # Define the Base URL for the PubChem PUG REST API
 BASE_URL = "https://pubchem.ncbi.nlm.nih.gov/rest/pug"
@@ -79,6 +79,9 @@ search_method = st.sidebar.radio(
     ),
 )
 
+st.sidebar.write(" ")
+st.sidebar.write(" ")
+st.sidebar.write("Created by: Parthebhan Pari")
 st.sidebar.write("Last updated : 11-02-2025")
 
 # ---- Search compound by CID ----
